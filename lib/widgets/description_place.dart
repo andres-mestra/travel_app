@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/widgets/stars/stars.dart';
 
 class DescriptionPlace extends StatelessWidget {
   final String namePlace;
@@ -32,39 +33,6 @@ class DescriptionPlace extends StatelessWidget {
       ),
     );
 
-    final starHalf = Container(
-      margin: const EdgeInsets.only(
-        top: 323,
-        right: 3,
-      ),
-      child: const Icon(
-        Icons.star_half,
-        color: Color(0xFFf2C611),
-      ),
-    );
-
-    final starBorder = Container(
-      margin: const EdgeInsets.only(
-        top: 323,
-        right: 3,
-      ),
-      child: const Icon(
-        Icons.star_border,
-        color: Color(0xFFf2C611),
-      ),
-    );
-
-    final star = Container(
-      margin: const EdgeInsets.only(
-        top: 323,
-        right: 3,
-      ),
-      child: const Icon(
-        Icons.star,
-        color: Color(0xFFf2C611),
-      ),
-    );
-
     final titleStars = Row(
       children: [
         Container(
@@ -84,12 +52,12 @@ class DescriptionPlace extends StatelessWidget {
           ),
         ),
         Row(
-          children: [
-            star,
-            star,
-            star,
-            star,
-            starBorder,
+          children: const [
+            Star(),
+            Star(),
+            Star(),
+            Star(),
+            StarBorder(),
           ],
         )
       ],
