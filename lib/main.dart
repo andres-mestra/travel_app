@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/widgets/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Travel App',
       home: Scaffold(
-        body: Text('Hola mundo'),
+        body: DescriptionPlace(),
       ),
     );
   }
