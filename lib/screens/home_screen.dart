@@ -21,6 +21,7 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
           const GradientBack(),
+          CardImage(type: 'paradise')
         ],
       ),
     );

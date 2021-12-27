@@ -62,7 +62,7 @@ flutter:
       - assets/img/laura.jpg
       - assets/img/manuela.jpg
       - assets/img/juliana.jpg
-  #   - images/a_dot_ham.jpeg
+      - assets/img/jar-loading.gif
   fonts:
     - family: Lato
       fonts:
