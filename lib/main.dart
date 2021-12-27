@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:travel_app/screens/screens.dart';
-import 'package:travel_app/widgets/widgets.dart';
 
 void main() {
+  //TODO:Buscar una mejor solución
+  //StatusBar Android transparent
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent,
+    statusBarBrightness: Brightness.light,
+  ));
   runApp(const MyApp());
 }
 
